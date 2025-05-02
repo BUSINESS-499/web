@@ -1,109 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Choice & Chomok</title>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Poppins:wght@400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Open+Sans&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: #1a1a2e;
-      color: #ffffff;
+      font-family: 'Open Sans', sans-serif;
+      background-color: #fffaf5;
+      color: #333;
     }
     header {
-      background-color: #0f0f1a;
-      padding: 1.5rem;
-      text-align: center;
-      border-bottom: 2px solid #FFD700;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      background-color: #2d1e30;
+      color: white;
     }
-    header h1 {
-      font-family: 'Cinzel', serif;
-      font-size: 2.8rem;
-      color: #FFD700;
-      margin: 0;
+    header img {
+      height: 60px;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     .hero {
-      padding: 2rem;
       text-align: center;
-      background: linear-gradient(135deg, #2a2a40, #1a1a2e);
+      padding: 60px 20px;
+      background: linear-gradient(to right, #8e2de2, #4a00e0);
+      color: white;
     }
-    .hero h2 {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
+    .hero h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 3em;
+      margin-bottom: 10px;
     }
     .products {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1.5rem;
-      padding: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
     }
     .product {
-      background-color: #2e2e4d;
-      padding: 1rem;
+      background: white;
+      border: 1px solid #ddd;
       border-radius: 10px;
+      padding: 15px;
       text-align: center;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
     }
     .product img {
       width: 100%;
-      border-radius: 8px;
+      border-radius: 10px;
     }
     .product h3 {
-      margin: 0.5rem 0;
-      font-size: 1.2rem;
+      font-family: 'Cinzel', serif;
+      margin: 10px 0;
     }
     .product button {
-      background-color: #FFD700;
-      color: #000;
+      padding: 10px 20px;
       border: none;
-      padding: 0.5rem 1rem;
+      background-color: #4a00e0;
+      color: white;
       border-radius: 5px;
       cursor: pointer;
-      transition: background 0.3s;
     }
     .product button:hover {
-      background-color: #e6c200;
+      background-color: #3a00b0;
     }
     footer {
       text-align: center;
-      padding: 1rem;
-      background-color: #0f0f1a;
-      color: #999;
+      padding: 20px;
+      background-color: #2d1e30;
+      color: white;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Choice & Chomok</h1>
+    <img src="FB_IMG_1746167524860.jpg" alt="Choice & Chomok Logo">
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">New Arrivals</a>
+      <a href="#">Contact</a>
+    </nav>
   </header>
+
   <section class="hero">
-    <h2>Welcome to Royal Fashion</h2>
-    <p>Luxury that fits your lifestyle</p>
+    <h1>Welcome to Choice & Chomok</h1>
+    <p>Where Royalty Meets Style</p>
   </section>
+
   <section class="products">
     <div class="product">
-      <img src="https://via.placeholder.com/200x250" alt="Sample Product">
-      <h3>Royal Hoodie</h3>
-      <p>৳ 1500</p>
+      <img src="https://via.placeholder.com/250x300" alt="Product 1">
+      <h3>Elegant Kurti</h3>
+      <p>৳999</p>
       <button>Add to Cart</button>
     </div>
     <div class="product">
-      <img src="https://via.placeholder.com/200x250" alt="Sample Product">
-      <h3>Chomok T-Shirt</h3>
-      <p>৳ 800</p>
+      <img src="https://via.placeholder.com/250x300" alt="Product 2">
+      <h3>Luxury Gown</h3>
+      <p>৳1899</p>
       <button>Add to Cart</button>
     </div>
     <div class="product">
-      <img src="https://via.placeholder.com/200x250" alt="Sample Product">
-      <h3>Choice Premium Jacket</h3>
-      <p>৳ 2500</p>
+      <img src="https://via.placeholder.com/250x300" alt="Product 3">
+      <h3>Festive Saree</h3>
+      <p>৳2499</p>
       <button>Add to Cart</button>
     </div>
   </section>
+
   <footer>
-    &copy; 2025 Choice & Chomok. All rights reserved.
+    <p>&copy; 2025 Choice & Chomok. All rights reserved.</p>
   </footer>
 </body>
 </html>
