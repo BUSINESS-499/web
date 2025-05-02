@@ -1,10 +1,109 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My First Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Choice & Chomok</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Poppins:wght@400&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #1a1a2e;
+      color: #ffffff;
+    }
+    header {
+      background-color: #0f0f1a;
+      padding: 1.5rem;
+      text-align: center;
+      border-bottom: 2px solid #FFD700;
+    }
+    header h1 {
+      font-family: 'Cinzel', serif;
+      font-size: 2.8rem;
+      color: #FFD700;
+      margin: 0;
+    }
+    .hero {
+      padding: 2rem;
+      text-align: center;
+      background: linear-gradient(135deg, #2a2a40, #1a1a2e);
+    }
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+    .product {
+      background-color: #2e2e4d;
+      padding: 1rem;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    }
+    .product img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .product h3 {
+      margin: 0.5rem 0;
+      font-size: 1.2rem;
+    }
+    .product button {
+      background-color: #FFD700;
+      color: #000;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .product button:hover {
+      background-color: #e6c200;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #0f0f1a;
+      color: #999;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello from Termux and GitHub Pages!</h1>
-  <p>This is my very first website.</p>
+  <header>
+    <h1>Choice & Chomok</h1>
+  </header>
+  <section class="hero">
+    <h2>Welcome to Royal Fashion</h2>
+    <p>Luxury that fits your lifestyle</p>
+  </section>
+  <section class="products">
+    <div class="product">
+      <img src="https://via.placeholder.com/200x250" alt="Sample Product">
+      <h3>Royal Hoodie</h3>
+      <p>৳ 1500</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/200x250" alt="Sample Product">
+      <h3>Chomok T-Shirt</h3>
+      <p>৳ 800</p>
+      <button>Add to Cart</button>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/200x250" alt="Sample Product">
+      <h3>Choice Premium Jacket</h3>
+      <p>৳ 2500</p>
+      <button>Add to Cart</button>
+    </div>
+  </section>
+  <footer>
+    &copy; 2025 Choice & Chomok. All rights reserved.
+  </footer>
 </body>
 </html>
