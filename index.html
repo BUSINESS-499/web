@@ -1,169 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Choice & Chomok</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
+
     body {
-      font-family: 'Open Sans', sans-serif;
-      background-color: #fdfdfd;
-      color: #222;
+      font-family: 'Playfair Display', serif;
+      background-color: #fff;
+      color: #111;
     }
+
     header {
-      background-color: #1b1b2f;
-      padding: 15px 30px;
+      padding: 20px 40px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      border-bottom: 1px solid #ccc;
     }
-    header img {
-      height: 60px;
+
+    .logo img {
+      height: 50px;
     }
+
     nav a {
-      color: white;
+      margin-left: 25px;
       text-decoration: none;
-      margin: 0 15px;
-      font-weight: bold;
-      transition: color 0.3s;
+      color: #000;
+      font-weight: 500;
+      font-size: 14px;
+      letter-spacing: 1px;
     }
-    nav a:hover {
-      color: #ffcf40;
-    }
+
     .hero {
-      background: url('https://images.unsplash.com/photo-1556905055-8f358a7a47b2') no-repeat center center/cover;
       height: 90vh;
+      background: url('https://images.unsplash.com/photo-1600185365312-e00e718b9f54') center/cover no-repeat;
       display: flex;
       align-items: center;
       justify-content: center;
+      color: #fff;
       text-align: center;
-      color: white;
     }
+
     .hero h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 3.5rem;
-      background: rgba(0,0,0,0.5);
+      font-size: 4rem;
+      background-color: rgba(0,0,0,0.4);
       padding: 20px;
-      border-radius: 10px;
     }
-    .products-section {
-      padding: 60px 30px;
-      background-color: #fff;
-    }
-    .products-section h2 {
-      text-align: center;
-      font-family: 'Playfair Display', serif;
-      font-size: 2.5rem;
-      margin-bottom: 40px;
-    }
-    .products {
+
+    .collection {
+      padding: 60px 40px;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 25px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
     }
-    .product {
-      border: 1px solid #ddd;
-      border-radius: 12px;
+
+    .item {
+      position: relative;
       overflow: hidden;
-      background: #fafafa;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-      transition: transform 0.3s;
     }
-    .product:hover {
-      transform: translateY(-5px);
-    }
-    .product img {
+
+    .item img {
       width: 100%;
-      height: 300px;
-      object-fit: cover;
+      display: block;
+      transition: transform 0.3s ease;
     }
-    .product-details {
-      padding: 20px;
-      text-align: center;
+
+    .item:hover img {
+      transform: scale(1.05);
     }
-    .product h3 {
-      font-family: 'Playfair Display', serif;
-      margin-bottom: 10px;
-    }
-    .product p {
-      margin-bottom: 15px;
-    }
-    .product button {
-      padding: 10px 20px;
-      background-color: #1b1b2f;
+
+    .info {
+      position: absolute;
+      bottom: 10px;
+      left: 20px;
       color: white;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background 0.3s;
+      background-color: rgba(0,0,0,0.5);
+      padding: 10px;
     }
-    .product button:hover {
-      background-color: #ffcf40;
-      color: #1b1b2f;
-    }
+
     footer {
-      background-color: #1b1b2f;
-      color: white;
       text-align: center;
-      padding: 30px 15px;
-      margin-top: 40px;
+      padding: 30px;
+      background-color: #111;
+      color: white;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="FB_IMG_1746167524860.jpg" alt="Choice & Chomok Logo">
+    <div class="logo">
+      <img src="https://i.imgur.com/WL8yL6v.png" alt="Choice & Chomok Logo">
+    </div>
     <nav>
-      <a href="#">Home</a>
-      <a href="#">Shop</a>
-      <a href="#">New Arrivals</a>
-      <a href="#">Contact</a>
+      <a href="#">WOMEN</a>
+      <a href="#">MEN</a>
+      <a href="#">NEW</a>
+      <a href="#">SALE</a>
+      <a href="#">CONTACT</a>
     </nav>
   </header>
 
   <section class="hero">
-    <h1>Choice & Chomok — Unleash Your Royal Style</h1>
+    <h1>Style is a reflection of choice — and every choice tells your story</h1>
   </section>
 
-  <section class="products-section">
-    <h2>Featured Collection</h2>
-    <div class="products">
-      <div class="product">
-        <img src="https://via.placeholder.com/300x400" alt="Kurti">
-        <div class="product-details">
-          <h3>Royal Kurti</h3>
-          <p>৳990</p>
-          <button>Add to Cart</button>
-        </div>
+  <section class="collection">
+    <div class="item">
+      <img src="https://images.unsplash.com/photo-1603252109303-2751441f1820" alt="Product 1">
+      <div class="info">
+        <h3>Classic Jacket</h3>
+        <p>$109.99</p>
       </div>
-      <div class="product">
-        <img src="https://via.placeholder.com/300x400" alt="Gown">
-        <div class="product-details">
-          <h3>Midnight Gown</h3>
-          <p>৳1850</p>
-          <button>Add to Cart</button>
-        </div>
+    </div>
+    <div class="item">
+      <img src="https://images.unsplash.com/photo-1531415074968-036ba1b575da" alt="Product 2">
+      <div class="info">
+        <h3>Modern Saree</h3>
+        <p>$149.99</p>
       </div>
-      <div class="product">
-        <img src="https://via.placeholder.com/300x400" alt="Saree">
-        <div class="product-details">
-          <h3>Festive Saree</h3>
-          <p>৳2450</p>
-          <button>Add to Cart</button>
-        </div>
+    </div>
+    <div class="item">
+      <img src="https://images.unsplash.com/photo-1582719478181-c4b1c19c8674" alt="Product 3">
+      <div class="info">
+        <h3>Royal Gown</h3>
+        <p>$199.99</p>
       </div>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 Choice & Chomok. Designed with royal elegance.</p>
+    <p>&copy; 2025 Choice & Chomok — All rights reserved</p>
   </footer>
 </body>
 </html>
